@@ -7,5 +7,7 @@ urlpatterns=[
     path('api-token-auth/', views.obtain_auth_token),
     path('',view.getData,name="getData"),
     path('add',view.addData,name="addtData"),
-    path('register/',view.Register)
+    path('register/',view.Register),
+    path('login/', view.Login, name='login'),
+    path('logout/', view.Logout, name='logout'),
 ]
